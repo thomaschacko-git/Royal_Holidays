@@ -4,7 +4,7 @@ html {
 .bgimg img {
   width: 100%;
   height: 85vh;
-  object-position: 30% 0%;
+  object-position: 0% 5%;
   object-fit: cover;
   position: relative;
 }
@@ -12,6 +12,7 @@ html {
   .bgimg img {
     height: 50vh;
     object-fit: cover;
+    object-position: 50% 0%;
   }
 }
 .contents {
@@ -22,7 +23,7 @@ html {
 }
 @media (max-width: 767px) {
   .contents {
-    top: 32%;
+    top: 45%;
   }
 }
 .contents h1 {
