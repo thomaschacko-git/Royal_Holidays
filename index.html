@@ -33,6 +33,9 @@
       type="image/x-icon"
       href="./Gallery/—Pngtree—modern icon solution letter r_3619488.png"
     />
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container-fluid w-100">
@@ -139,7 +142,7 @@
             ABOUT US
           </p>
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right">
               <img
                 class="about-image"
                 src="./Gallery/pexels-bhupendra-singh-756024.jpg"
@@ -166,7 +169,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="row pt-3">
                   <div class="col-6">
-                    <div class="row">
+                    <div class="row" data-aos="zoom-in">
                       <img
                         style="border-radius: 20px"
                         src="./Gallery/carousel2.jpg"
@@ -175,7 +178,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="row">
+                    <div class="row" data-aos="zoom-in">
                       <img
                         style="border-radius: 20px"
                         src="./Gallery/carousel4.jpg"
@@ -316,8 +319,8 @@
         </p>
         <div class="container-fluid overflow-hidden">
           <div class="row gy-5 gy-md-6 gx-xl-6">
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="text-center shadow-lg p-2">
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-right">
+              <div class="text-center shadow-sm p-2">
                 <div class="d-flex align-items-center">
                   <h5
                     style="border-bottom: 4px solid green; padding-bottom: 3px"
@@ -335,8 +338,8 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="text-center shadow-lg p-2">
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-right">
+              <div class="text-center shadow-sm p-2">
                 <div class="d-flex align-items-center">
                   <h5
                     style="border-bottom: 4px solid green; padding-bottom: 3px"
@@ -354,8 +357,8 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="text-center shadow-lg p-2">
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-right">
+              <div class="text-center shadow-sm p-2">
                 <div class="d-flex align-items-center">
                   <h5
                     style="border-bottom: 4px solid green; padding-bottom: 3px"
@@ -373,8 +376,8 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="text-center shadow-lg p-2">
+            <div class="col-12 col-sm-6 col-lg-4" data-aos="flip-right">
+              <div class="text-center shadow-sm p-2">
                 <div class="d-flex align-items-center">
                   <h5
                     style="border-bottom: 4px solid green; padding-bottom: 3px"
@@ -539,15 +542,11 @@
         <p style="letter-spacing: 3px" class="text-success text-center">
           CONTACT
         </p>
-        <div class="contact-container w-100 mx-auto">
-          <img
-            src="./Gallery/pexels-artūras-kokorevas-12167069.jpg"
-            class="contact-img"
-            alt=""
-          />
+        <div class="contact-container w-100 mx-auto" data-aos="zoom-in">
+          <img src="./Gallery/wave-haikei.png" class="contact-img" alt="" />
           <form class="contact-form w-50">
             <div class="form-group">
-              <label for="name" class="text-dark fw-bold">Name :</label>
+              <label for="name" class="text-white fw-bold pb-2">Name :</label>
               <input
                 type="text"
                 class="form-control"
@@ -558,7 +557,7 @@
               />
             </div>
             <div class="form-group">
-              <label for="email" class="text-dark fw-bold">Email :</label>
+              <label for="email" class="text-white fw-bold pb-2">Email :</label>
               <input
                 type="email"
                 class="form-control"
@@ -569,7 +568,7 @@
               />
             </div>
             <div class="form-group">
-              <label for="message" class="text-dark fw-bold">Message :</label>
+              <label for="message" class="text-white fw-bold pb-2">Message :</label>
               <textarea
                 class="form-control"
                 id="message"
@@ -922,5 +921,9 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
