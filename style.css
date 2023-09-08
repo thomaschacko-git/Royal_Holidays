@@ -31,7 +31,21 @@ html {
   font-weight: bolder;
   letter-spacing: 4px;
   font-family: "IBM Plex Sans", sans-serif;
+  animation: slideTop 1.5s ease forwards;
+  animation-delay: 1s;
 }
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 767px) {
   .contents h1 {
     font-size: 30px;
@@ -49,15 +63,27 @@ html {
   outline: none;
   transition: 0.7s;
   font-family: "IBM Plex Sans", sans-serif;
+  animation: slideLeft 1.5s ease forwards;
+  animation-delay: 1s;
 }
+
 @media (max-width: 767px) {
   .contents button {
     display: none;
   }
 }
-.contents button:hover {
-  transform: scale(1.1);
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
+
 h1 {
   font-family: "IBM Plex Sans", sans-serif;
 }
